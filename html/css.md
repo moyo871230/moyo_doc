@@ -16,5 +16,7 @@
   2. inline-block有个缺点是当两个元素处于同一行时，他们中间会产生4个像素的间隙。这是因为我们在编写代码时两个元素间用了回车符，回车符就相当于空白符。所以我们可以通过对这两个元素的父元素设置font-size为0来消除间隙。
 
 block元素主要有address，blockquote，center，dir，div，dl，fieldset，form，h1，h2，h3，h4，h5，h6，hr，isindex，menu，noframes，noscript，ol，p，pre，table，ul，li。
+
 inline元素主要有a，abbr，acronym，b，bdo，big，br，cite，code，dfn，em，font，i，img，input，kbd，label，q，s，samp，select，small，span，strike，strong，sub，sup，textarea，tt，u，var。
+
 可变元素(根据上下文关系确定该元素是block元素还是inline元素)主要有applet，button，del，iframe，ins，map，object，script。
