@@ -20,3 +20,6 @@ block元素主要有address，blockquote，center，dir，div，dl，fieldset，
 inline元素主要有a，abbr，acronym，b，bdo，big，br，cite，code，dfn，em，font，i，img，input，kbd，label，q，s，samp，select，small，span，strike，strong，sub，sup，textarea，tt，u，var。
 
 可变元素(根据上下文关系确定该元素是block元素还是inline元素)主要有applet，button，del，iframe，ins，map，object，script。
+
+## 为什么margin-left:auto可以使元素靠右对齐
+根据[w3c的规定](https://www.w3.org/html/ig/zh/wiki/CSS2/visudet#blockwidth)，常规流中的块级非置换元素需要满足：margin-left + border-left-width + padding-left + width + padding-right + border-right-width + margin-right = 包含块的宽度。如果margin-left为auto，width非0，其它值都为0，那么margin-left就等于包含块的宽度-自身宽度，所以元素就会靠在包含块的右边位置。
